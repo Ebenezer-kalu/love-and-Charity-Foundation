@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f3f3ee;
+  color: green;
+  text-align:center;
+  
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+#header {
+  background-image: url(/public/hand\ together.jpg);
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+/* Style for the list items */
+navbar nav ul {
+  display: flex;
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between; 
+ 
+}
+
+
+.hero {
+  margin-top: 20px;
+  color: #0c0b0a;
+  background-color: #1d8304;
+  border-radius: 15px;
+ 
+
+
+
+}
+#about-us{
+  padding: 40px 0;
+  background-color: #645454;
+  border-radius: 20px;
+  margin-top: 40px;
+
+}
+
+#environmental {
+color: #0c0b0a;
+
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 0;
+  border-radius: 20px;
+  margin-top: 40px;
+  background-color: #1d8304;
+  color: white;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+form button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+  background-color: #1d8304;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+footer nav ul li {
+  margin: 0 15px;
+}
+
+footer nav ul li a {
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Basic Styles for Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #645454;
+  border-radius: 20px;
+  position: relative;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  color: white;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Add Hamburger Icon */
+.navbar .hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(168, 46, 46);
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+/* Responsive Design (Mobile & Tablet) */
+@media (max-width: 768px) {
+  /* Hide the nav links on small screens by default */
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #645454;
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 60px; /* Position the dropdown below the navbar */
+    left: 0;
+    border-radius: 10px;
+    z-index: 5; /* Make sure it's above other content */
+  }
+
+  .navbar .nav-links a {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+
+  /* Show Hamburger Menu on Small Screens */
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar .nav-links.active {
+    display: flex; /* Show menu items when active */
+  }
+}
