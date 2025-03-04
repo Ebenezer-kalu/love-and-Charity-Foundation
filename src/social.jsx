@@ -1,14 +1,14 @@
 
 
-
-
 import React from "react";
+import "./Social.css";
 
-const social = () => {
+
+const Social = () => {
     return (
-      <section id="Social">
-        <div className="social">
-           <h2><b>Social service</b></h2>
+      <section id="Social ">
+        <div className="Social">
+           <h2><b>Social Service</b></h2>
             <h3 style={{color:"black"}}><i>
                         Our social service initiatives focus on creating lasting,<br/> 
                         positive change by addressing key social challenges and improving
@@ -53,5 +53,5 @@ const social = () => {
     );
   };
   
-  export default social;
+  export default Social;
   

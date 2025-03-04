@@ -1,0 +1,64 @@
+/* Social.css */
+
+/* General styling */
+.social {
+    background-color: white; /* White background */
+    color: green; /* Green text */
+    text-align: center;
+    padding: 30px;
+  }
+  
+  /* Section title */
+  .social h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darkgreen;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styling */
+  .social h3 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto;
+    color: black;
+  }
+  
+  /* Image container */
+  .imag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Image styling */
+  .imag img {
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on images */
+  .imag img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 5px 15px rgba(0, 128, 0, 0.5); /* Green shadow */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .imag img {
+      width: 100%; /* Full width on small screens */
+      height: auto;
+    }
+  
+    .social h3 {
+      font-size: 1rem;
+      max-width: 95%;
+    }
+  }
+  

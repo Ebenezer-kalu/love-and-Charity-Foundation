@@ -1,0 +1,42 @@
+/* Ensure this file is in the same folder as Governmental.jsx and properly linked */
+
+#governmental {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .governmental-container h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.1em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.6;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    width: 180px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.05);
+  }
+  

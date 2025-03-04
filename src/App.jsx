@@ -1,34 +1,28 @@
-import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import About from "./About";
 
-import Hero from "./hero";
-import Header from "./header";
-import Navbar from "./navbar";
-import AboutUs from "./aboutus";
-import Environmental from "./environmental";
-import Social from "./social";
-import Governmental from "./governmental";
-import Contact from "./contact";
-import Footer from "./footer";
-import Support from "./support"
-
-
+import Environmental from "./Environmental";
+import Social from "./Social";
+import Governmental from "./Governmental";
+import ContactUs from "./ContactUs";
+import Support from "./Support";
 
 function App() {
- 
   return (
-    <div>
-      <Header/>
-      <Navbar/>
-      <Hero/>
-      <AboutUs/>
-      <Environmental/>
-      <Social/>
-      <Governmental/>
-      <Support/>
-      <Contact/>
-      <Footer/>
-     
-      
+    <div className="content">
+      <Navbar />
+      <Routes>  {/* ✅ No BrowserRouter here */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        
+        <Route path="/environmental" element={<Environmental />} />
+        <Route path="/social" element={<Social />} />  // ✅ Path should be lowercase
+        <Route path="/governmental" element={<Governmental />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/support" element={<Support />} />
+      </Routes>
     </div>
   );
 }

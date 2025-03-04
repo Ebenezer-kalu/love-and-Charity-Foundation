@@ -4,7 +4,7 @@
 
 import React from "react";
 
-const AboutUs = () => {
+const About = () => {
     return (
       <section id="AboutUs">
         <div className="AboutUs">
@@ -42,5 +42,5 @@ const AboutUs = () => {
     );
   };
   
-  export default AboutUs;
+  export default About;
   

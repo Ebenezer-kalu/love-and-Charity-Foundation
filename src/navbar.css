@@ -1,0 +1,87 @@
+/* Navbar.css */
+
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green; /* Green background */
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: -25px;
+  z-index: 1000;
+}
+
+/* Add spacing below navbar */
+.content {
+  margin-top: 80px; /* Push content down to prevent overlap */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.logo img {
+  height: 50px; /* Logo size */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: lightgreen;
+}
+
+/* Hide Hamburger Menu on Desktop */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+    position: absolute;
+    right: 60px; /* Moved slightly to the left */
+    top: 20px;
+  }
+
+  .nav-links {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: green;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show when active */
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+}
